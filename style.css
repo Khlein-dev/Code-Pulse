@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #010f12;
+    color: #ffffff;
 }
 
 .nav {
@@ -56,4 +57,42 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(8, 149, 140, 0.55);
     background: linear-gradient(to bottom, #051a20, #010b0d, #000c0c);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+h1 {
+    background: linear-gradient(to bottom, #08a98c, #216b7d, #0c5161, #093030);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    text-shadow:
+        0 0 6px rgba(87, 224, 212, 0.3),  
+        0 0 12px rgba(48, 227, 189, 0.15);
+}
+
+
+textarea{
+    width: 560px;
+    height: 400px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #051a20, #010b0d, #000000);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    line-height: 1.4;
+    text-align: left;       /* aligns text to left */
+    vertical-align: top;  
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
