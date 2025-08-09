@@ -8,3 +8,52 @@ body {
     padding: 0;
     background-color: #010f12;
 }
+
+.nav {
+    background: linear-gradient(to bottom, #0a323c, #010505, #010f12);
+    width: auto;
+    height: 100vh;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 100ms ease-in-out;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    display: none;
+    transition: 100ms ease-in-out;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nav:hover .items {
+    display: block
+}
+
+.container {
+    width: calc(100% - 200px);
+    height: 550px;
+    margin-left: 100px;
+    margin-top:30px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(8, 149, 140, 0.55);
+    background: linear-gradient(to bottom, #051a20, #010b0d, #000c0c);
+}
