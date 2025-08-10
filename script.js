@@ -16,7 +16,7 @@
     const searchInput = document.getElementById("searchInput");
     const morseOutput = document.getElementById("morseOutput");
 
-    // Listen for typing in the first textarea
+    
     searchInput.addEventListener("input", function () {
         const text = searchInput.value.toLowerCase();
         let morse = "";
@@ -30,7 +30,7 @@
 
     function copyMorse() {
     const morseOutput = document.getElementById("morseOutput");
-    morseOutput.select(); // highlight the text
-    morseOutput.setSelectionRange(0, 99999); // for mobile devices
-    document.execCommand("copy"); // copy to clipboard
+    morseOutput.select(); 
+    morseOutput.setSelectionRange(0, 99999);
+    document.execCommand("copy"); 
     alert("Copied to clipboard!");}

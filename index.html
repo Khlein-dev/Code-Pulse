@@ -11,6 +11,8 @@
 
 <body>
 
+    <!-- Navigation Bar -->
+
     <div class="nav">
 
         <img src="pics/logo.png" alt=""
@@ -40,6 +42,8 @@
 
     </div>
 
+    <!-- Content -->
+
     <div class="container" id="translate-text">
         <h1>CODE PULSE</h1>
 
@@ -59,12 +63,12 @@
         </form>
         <div class="bot">
 
-            <button onclick="copyMorse()"
-                style="padding: 5px 10px; cursor: pointer; align-items: flex-end;">
+            <button onclick="copyMorse()" style="padding: 5px 10px; cursor: pointer; align-items: flex-end;">
                 Copy
             </button>
 
-            <button onclick="document.getElementById('searchInput').value = ''; document.getElementById('morseOutput').value = ''"
+            <button
+                onclick="document.getElementById('searchInput').value = ''; document.getElementById('morseOutput').value = ''"
                 style="padding: 5px 10px; cursor: pointer; align-items: flex-end;">
                 Clear
             </button>
@@ -149,6 +153,42 @@ Z — — • •
 ) — • — — • — (right parenthesis)
 </textarea>
         </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="foot">
+            <a href="#translate-text"> <img src="pics/logo.png" style="margin-left: 10px; z-index: 0;"></a>
+            <br><br>
+
+            <p style="width: 300px; text-align: justify; size: 3px; margin-left: 10px;">CodePulse is a website developed
+                by <b>Kier Pascua</b>, designed to translate Morse code into clear, readable text.</p>
+
+            <br>
+            <p>&copy; 2025 Code Pulse. All rights reserved.</p>
+
+        </div>
+
+        <div style="margin-left: 300px; display: flex; flex-direction: row;">
+            <div class="ref">
+                <a href="#translate-text">Translate</a>
+                <a href="#learn-morse">Learn</a>
+                <a href="https://github.com/Khlein-dev" target="_blank">Contact</a>
+
+            </div>
+
+            <div class="ref">
+                <a href="https://github.com/Khlein-dev" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/kier.pascua.2024" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/khyre.nova/" target="_blank">Instagram</a>
+
+            </div>
+
+        </div>
+
 
     </div>
 
