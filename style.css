@@ -26,7 +26,7 @@ body {
 }
 
 .nav:hover {
-    width: 200px; /* expanded width on hover */
+    width: 198px; 
 }
 
 
@@ -54,15 +54,38 @@ body {
     }
 }
 
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.link:hover {
+   width: 180px;
+    border: #ffffff 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 100ms ease-in-out;
+    background-color: #0a323c;
+}
+
 .nav:hover .items {
     display: block
+}
+
+.nav:hover .link p {
+    display: block;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
     font-size: 12px;
-    margin-top: 20px;
+   
 }
 
 .icon {
@@ -70,13 +93,19 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 900px;
     padding: 5px;
+}
+
+.link p{
+    display: none;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 
 .container {
     width: calc(100% - 200px);
-    height: 550px;
+    height: 560px;
     margin-left: 100px;
     margin-top:30px;
     padding: 20px;
@@ -127,6 +156,6 @@ form {
 img {
     width: 40px;
     height: 40px;
-    margin-top: 20px;
+    transform: translateY(10px);
     
 }

@@ -17,39 +17,131 @@
             style="top: 0; left: 0; position: absolute; vertical-align: top; width: 60px; height: 60px; margin-left: 10px;">
 
         <div class="icon">
-            <img src="pics/morse-code.png" alt="Code Pulse Logo"> <br>
-            <img src="pics/idea.png" alt="Code Pulse Logo"> <br>
-            <img src="pics/github (1).png" alt="Code Pulse Logo">
+            <a href="#translate-text">
+                <div class="link"><img src="pics/morse-code.png" alt="Code Pulse Logo">
+                    <p>Translate Text</p>
+                </div>
+            </a>
+            <a href="#learn-morse">
+                <div class="link"><img src="pics/idea.png" alt="Code Pulse Logo">
+                    <p>Learn Morse-code</p>
+                </div>
+            </a>
+            <a href="https://github.com/Khlein-dev/Code-Pulse" target="_blank">
+                <div class="link"><img src="pics/github (1).png" alt="Code Pulse Logo">
+                    <p>View on GitHub</p>
+                </div>
+            </a>
         </div>
 
         <div class="items">
-            <a href="about.html" class="item">Translate Text</a> <br><br>
-            <a href="about.html" class="item">Learn Morse code</a> <br><br>
-            <a href="contact.html" class="item">View on GitHub</a> <br>
+
         </div>
 
     </div>
 
-    <div class="container">
+    <div class="container" id="translate-text">
         <h1>CODE PULSE</h1>
 
         <hr
             style="border:none; height:4px; background:linear-gradient(to right, #08a98c, #216b7d, #0c5161, #093030); border-radius:2px;">
 
 
-        <p>Welcome to Code Pulse, your go-to platform for coding challenges and learning resources</p>
+        <p>The fast and fun way to translate text and Morse code. Type, convert, and explore the language of dots and
+            dashes instantly. <button onclick="copyMorse()"
+                style="padding: 5px 10px; background: #08a98c; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 200px;">
+                Copy
+            </button></p>
         <form action="">
             <!-- Text Input -->
             <textarea id="searchInput" placeholder="Enter Text..."></textarea>
 
             <!-- Morse code output -->
             <textarea id="morseOutput" placeholder="Your text in Morse code..." readonly></textarea>
+
         </form>
 
 
     </div>
 
     <script src="script.js"></script>
+
+    <div class="container" id="learn-morse">
+        <h1>LEARN MORSE CODE</h1>
+
+        <hr
+            style="border:none; height:4px; background:linear-gradient(to right, #08a98c, #216b7d, #0c5161, #093030); border-radius:2px;">
+
+
+        <p> Unlock the world of dots and dashes. Whether for fun, skill-building, or decoding secret messages, mastering
+            Morse code is easy and exciting once you know the basics.</p>
+        <div style="display: flex;">
+            <textarea name="" id="" style=" width: 15%; background: none; display: inline;" readonly>
+A  • —
+B  — • • •
+C  — • — •
+D  — • •
+E  •
+F  • • — •
+G  — — •
+H  • • • •
+I  • •
+J  • — — —
+K  — • —
+L  • — • •
+M  — —
+</textarea>
+            <textarea name="" id="" style=" width: 15%; background: none; display: inline;" readonly>
+N — •
+O — — —
+P • — — •
+Q — — • —
+R • — •
+S • • •
+T —
+U • • —
+V • • • —
+W • — —
+X — • • —
+Y — • — —
+Z — — • •
+</textarea>
+            <textarea name="" id="" style=" width: 15%; background: none; display: inline;" readonly>
+Á • — — • —
+Ä • — • —
+É • • — • •
+Ñ — — • — —
+Ö — — — •
+Ü • • — —
+
+0 — — — — —
+1 • — — — —
+2 • • — — —
+3 • • • — —
+4 • • • • —
+5 • • • • •
+</textarea>
+            <textarea name="" id="" style=" width: 15%; background: none; display: inline;" readonly>
+6 — • • • •
+7 — — • • •
+8 — — — • •
+9 — — — — •
+</textarea>
+            <textarea name="" id="" style=" width: 30%; background: none; display: inline;" readonly>
+, — — • • — — (comma)
+. • — • — • — (period)
+? • • — — • • (question mark)
+" • — • • — • (quotation marks)
+: — — — • • • (colon)
+' • — — — — • (apostrophe)
+- — • • • • — (hyphen)
+/ — • • — • (slash)
+( — • — — • (left parenthesis)
+) — • — — • — (right parenthesis)
+</textarea>
+        </div>
+
+    </div>
 
 </body>
 
