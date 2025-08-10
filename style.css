@@ -11,8 +11,8 @@ body {
 }
 
 .nav {
-    background: linear-gradient(to bottom, #0a323c, #010505, #010f12);
-    width: auto;
+    background: linear-gradient(to bottom, #0a323c, #010f12, #010505);
+    width: 45px; /* starting narrow width */
     height: 100vh;
     color: #ffffff;
     padding: 10px 20px;
@@ -22,30 +22,56 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    transition: 100ms ease-in-out;
+    transition: width 0.3s ease-in-out; /* smooth width change */
 }
 
+.nav:hover {
+    width: 200px; /* expanded width on hover */
+}
+
+
 .items {
-    display: flex;
+    
     flex-direction: column;
     gap: 20px;
     width: 200px;
+    height: 100%;
     display: none;
     transition: 100ms ease-in-out;
-    animation: slideIn 0.3s ease-in-out;
+    transform: translateY(200px);
+    animation: slideIn 0.3s forwards; 
+    
 }
 
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
+        transform: translateY(300px);
     }
     to {
         transform: translateX(0);
+        transform: translateY(300px);
     }
 }
 
 .nav:hover .items {
     display: block
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
 }
 
 .container {
@@ -88,11 +114,19 @@ textarea{
     resize: none;
     line-height: 1.4;
     text-align: left;       /* aligns text to left */
-    vertical-align: top;  
+    vertical-align: top;
+    font-size: 18px;  
 }
 
 form {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    
 }
