@@ -105,7 +105,7 @@ a {
 
 .container {
     width: calc(100% - 200px);
-    height: 560px;
+    height: 580px;
     margin-left: 100px;
     margin-top:30px;
     padding: 20px;
@@ -117,7 +117,7 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 h1 {
-    background: linear-gradient(to bottom, #08a98c, #216b7d, #0c5161, #093030);
+    background: linear-gradient(to bottom, #4FB281, #368D67, #338965, #175F48);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
     font-family: 'Inter', sans-serif;
@@ -158,4 +158,29 @@ img {
     height: 40px;
     transform: translateY(10px);
     
+}
+
+.bot {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 5px;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+button {
+    width: 100px;
+    border: #216b7d 2px solid;
+    border-radius: 10px;
+    background:none;
+    color: #216b7d;
+    transition: 100ms ease-in-out;
+
+}
+
+button:hover {
+    background: #216b7d;
+    color: white;
+    transition: 100ms ease-in-out;
 }

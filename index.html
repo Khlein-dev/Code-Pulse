@@ -48,10 +48,7 @@
 
 
         <p>The fast and fun way to translate text and Morse code. Type, convert, and explore the language of dots and
-            dashes instantly. <button onclick="copyMorse()"
-                style="padding: 5px 10px; background: #08a98c; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 200px;">
-                Copy
-            </button></p>
+            dashes instantly.</p>
         <form action="">
             <!-- Text Input -->
             <textarea id="searchInput" placeholder="Enter Text..."></textarea>
@@ -60,7 +57,19 @@
             <textarea id="morseOutput" placeholder="Your text in Morse code..." readonly></textarea>
 
         </form>
+        <div class="bot">
 
+            <button onclick="copyMorse()"
+                style="padding: 5px 10px; cursor: pointer; align-items: flex-end;">
+                Copy
+            </button>
+
+            <button onclick="document.getElementById('searchInput').value = ''; document.getElementById('morseOutput').value = ''"
+                style="padding: 5px 10px; cursor: pointer; align-items: flex-end;">
+                Clear
+            </button>
+
+        </div>
 
     </div>
 
