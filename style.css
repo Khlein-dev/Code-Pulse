@@ -116,6 +116,8 @@ a {
     background: linear-gradient(to bottom, #051a20, #010b0d, #000c0c);
 }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 h1 {
@@ -147,6 +149,19 @@ textarea {
     text-align: left;
     vertical-align: top;
     font-size: 18px;
+}
+
+
+@media (min-width: 1440px) {
+    textarea {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1920px) {
+    textarea {
+        width: 2000px;
+    }
 }
 
 form {
